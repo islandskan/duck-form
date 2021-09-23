@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="red">
+
+            <form class="form" id="form1">
+
+                <div class="form-container name-container">
+                    <label for="name">full name</label>
+                    <input class="name-input" type="text" name="name" id="name" required> 
+                </div>   
+
+                <div class="form-container email-container">
+                    <label for="email">email</label>
+                    <input class="email-input" type="email" name="email" id="email" 
+                    placeholder="Your Email" required autofocus>
+                </div>
+
+                <div class="form-container messreg-container">
+                    <label for="messreg">message regarding</label>
+                    <input  class="messreg-input" type="text" name="messreg" id="messreg" required>
+                </div>
+
+                <div class="form-container message-container">
+                    <label for="yourmessage">message</label>
+                    <input class="message-input" type="text" name="yourmessage" id="yourmessage" 
+                    placeholder="Your Message" required maxlength="50">
+                </div>
+
+                <button type="submit" class="button" form="form1" value="Submit">send message</button>                
+            </form>
+
+        </div>
+
+        <div class="absolute">
+            <div class="yellow absolute"></div>
+            <img src="/images/hiclipart 2.png" alt="yellow rubberduck">
+        </div>
+        
+    </div>
+    
+</body>
+</html>
