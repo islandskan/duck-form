@@ -4,50 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duck Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Duck Form</title>
     <link rel="stylesheet" href="/styles/index.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="red">
-
-            <form class="form" id="form1">
-
-                <div class="form-container name-container">
-                    <label for="name">full name</label>
-                    <input class="name-input" type="text" name="name" id="name" required> 
-                </div>   
-
-                <div class="form-container email-container">
-                    <label for="email">email</label>
-                    <input class="email-input" type="email" name="email" id="email" 
-                    placeholder="Your Email" required autofocus>
-                </div>
-
-                <div class="form-container messreg-container">
-                    <label for="messreg">message regarding</label>
-                    <input  class="messreg-input" type="text" name="messreg" id="messreg" required>
-                </div>
-
-                <div class="form-container message-container">
-                    <label for="yourmessage">message</label>
-                    <input class="message-input" type="text" name="yourmessage" id="yourmessage" 
-                    placeholder="Your Message" required maxlength="50">
-                </div>
-
-                <button type="submit" class="button" form="form1" value="Submit">send message</button>                
+        <div class="form-container">
+            <form class="form">
+                <label for="name" class="form__label label-name">
+                    Full Name
+                    <input type="text" name="input-name" id="name" class="form__label--input input-name" required autofocus>
+                </label>
+                <label for="email" class="form__label label-email">
+                    Email
+                    <input type="email" name="input-email" id="email" class="form__label--input input-email" required placeholder="Your Email">
+                </label>
+                <label for="message" class="form__label label-message">
+                    Message regarding
+                    <input type="text" name="input-message" id="message" class="form__label--input input-message">
+                </label>
+                <label for="full-mess" class="form__label label-full-mess">
+                    Message
+                    <input type="text" name="input-full-mess" id="full-mess" class="form__label--input input-full-mess" required placeholder="Your Message">
+                </label>
+                <button type="submit" class="form__btn">
+                    <a class="form__btn--link" href="#">Send Message</a>
+                </button>
             </form>
-
         </div>
-
-        <div class="absolute">
-            <div class="yellow absolute"></div>
-            <img src="/images/hiclipart 2.png" alt="yellow rubberduck">
-        </div>
-        
+        <img src="/images/hiclipart 2.png" class="form__img" alt="yellow rubber duck">
     </div>
-    
+
 </body>
 </html>
